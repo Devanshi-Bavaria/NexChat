@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Middleware setup
 app.use(cors({
-  origin: "*",
+  origin: "https://nexchat1-rl08bwbxl-devanshis-projects-202c9db4.vercel.app/",
   methods: ["POST", "GET"],
   credentials: true,
 }));
