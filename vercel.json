@@ -1,7 +1,10 @@
 {
     "version": 2,
     "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/api/:path*",
+      "destination": "https://api.example.com/:path*"
+    }
   ],
     "builds": [
         {
