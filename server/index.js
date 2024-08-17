@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Middleware setup
 app.use(cors({
-  origin: "https://nex-chat-nine.vercel.app/",
+  origin: "*",
   methods: ["POST", "GET"],
   credentials: true,
 }));
@@ -30,18 +30,14 @@ mongoose
   .catch((err) => {
     console.log(err.message);
   });
-
 // API routes setup
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
-
 // Server setup
 // const server = app.listen(process.env.PORT, () =>
 //   console.log(`Server started on port ${process.env.PORT}`)
 // );
-
 const httpServer = createServer(app);
-
 // Socket.io setup
 const io = new Server(httpServer, {
   cors: {
@@ -50,14 +46,11 @@ const io = new Server(httpServer, {
     credentials: true,
   },
 });
-
 httpServer.listen(process.env.PORT, () =>
   console.log(`Server started on port ${process.env.PORT}`)
 );
-
 // Global map to store online users and their socket IDs
 global.onlineUsers = new Map();
-
 // Socket.io connection event
 io.on("connection", (socket) => {
   global.chatSocket = socket;
@@ -65,7 +58,6 @@ io.on("connection", (socket) => {
   socket.on("add-user", (userId) => {
     onlineUsers.set(userId, socket.id);
   });
-
   // Event to send a message
   socket.on("send-msg", (data) => {
     const sendUserSocket = onlineUsers.get(data.to);
