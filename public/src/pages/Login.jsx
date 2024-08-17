@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logo2.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { loginRoute } from "../utils/APIRoutes";
@@ -70,21 +70,19 @@ export default function Login() {
         <div className="left">
         <div className="brand leftside">
             <img src={Logo} alt="logo" />
-            <h1>QuasarChat</h1>
+            <h1>NEXCHAT</h1>
             <p>
               A simple chat application built with React, Node.js, Express.js, and Socket.io. My philosophy is to keep things simple and easy to use.
-              World is a place where we all live together, so let's chat together. My name is <a href="https://linkedin.com/in/harshil-sanghvi">Harshil Sanghvi</a> and I am the creator of this application. With the help of resources from <a href="https://youtu.be/otaQKODEUFs?si=NFFq2-QjuSjORJ86">YouTube</a> and <a href="https://www.google.com/">Google</a>, I was able to build this application. I hope you like it.
+              World is a place where we all live together, so let's chat together. My name is <a href="https://www.linkedin.com/in/devanshi-bavaria-2a1488231/">Devanshi Bavaria</a> and I am the creator of this application. With the help of resources from <a href="https://youtu.be/otaQKODEUFs?si=NFFq2-QjuSjORJ86">YouTube</a> and <a href="https://www.google.com/">Google</a>, I was able to build this application. I hope you like it.
             </p>
             <div className="social-links">
-            <a className="git" href="https://github.com/harshil-sanghvi" target="_blank" rel="noopener noreferrer">
+            <a className="git" href="https://github.com/Devanshi-Bavaria" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
-            <a className="linkedin" href="https://linkedin.com/in/harshilsanghvi" target="_blank" rel="noopener noreferrer">
+            <a className="linkedin" href="https://www.linkedin.com/in/devanshi-bavaria-2a1488231/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a className="scholar" href="https://scholar.google.com/citations?user=mO8N2hkAAAAJ" target="_blank" rel="noopener noreferrer">
-              <SiGooglescholar />
-            </a>
+      
           </div>
           </div>
         </div>
@@ -134,7 +132,7 @@ const FormContainer = styled.div`
     font-size: 2rem;
     margin-top: 1rem;
     a {
-      color: #000000b3;
+      color: #00000000;
       // color: blue;
       text-decoration: none;
       font-weight: bold;
@@ -152,7 +150,7 @@ const FormContainer = styled.div`
   }
   
   .left {
-    background-color: #ffffff; // login leftside background color
+    background-color: #00000076; // login leftside background color
     height: 100vh;
     width: 50vw;
     border-radius: 0 2rem 2rem 0;
@@ -171,7 +169,7 @@ const FormContainer = styled.div`
       width: 80%;
       line-height: 1.5;
       line-gap: 1.5;
-      color: black;
+      color: white;
       text-align: center;
       font-size: 1.4rem;
       a {
@@ -201,11 +199,11 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    background-color: #ffffff; // login rightside background color
+    background-color: #00000076; // login rightside background color
     border-radius: 1rem;
     padding: 1.3rem;
     h1 {
-      color: darkblue; // login rightside title
+      color: white; // login rightside title
       text-align: center;
     }
   }
@@ -214,12 +212,12 @@ const FormContainer = styled.div`
     padding: 1rem;
     border: 0.1rem solid #4e0eff;
     border-radius: 0.4rem;
-    color: black;
+    color: white;
     font-size: 1.2rem;
     width: 100%;
     font-size: 1rem;
     &:focus {
-      border: 0.2rem solid darkblue;
+      border: 0.1rem solid #997af0;
       outline: none;
     }
   }
@@ -237,7 +235,7 @@ const FormContainer = styled.div`
     }
   }
   span {
-    color: black;
+    color: white;
     a {
       color: #4e0eff;
       text-decoration: none;
