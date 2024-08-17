@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Middleware setup
 app.use(cors({
-  origin: "*",
+  origin: "https://nex-chat-nine.vercel.app/",
   methods: ["POST", "GET"],
   credentials: true,
 }));
