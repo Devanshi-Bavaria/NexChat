@@ -1,63 +1,95 @@
-# NexChat - Chat Application 
-NexChat is chat application build with the power of MERN Stack. You can find the tutorial [here](https://www.youtube.com/watch?v=otaQKODEUFs)
+# QuasarChat
 
-## Installation Guide
+QuasarChat is a real-time chat application that allows users to communicate with each other. It supports one-on-one messaging and provides a simple and intuitive user interface.
 
-### Requirements
-- [Nodejs](https://nodejs.org/en/download)
-- [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/)
+## Features
 
-Both should be installed and make sure mongodb is running.
-### Installation
+- **Real-Time Messaging:** Instantly send and receive messages in real-time.
+- **User Authentication:** Secure user authentication for a personalized experience.
+- **Contact List:** View and select contacts for one-on-one conversations.
+- **Emoji Support:** Express yourself with emojis using the built-in emoji picker.
+- **Logout Functionality:** Log out securely from the application.
 
-#### First Method
-```shell
-git clone https://github.com/koolkishan/chat-app-react-nodejs
-cd chat-app-react-nodejs
-```
-Now rename env files from .env.example to .env
-```shell
-cd public
-mv .env.example .env
-cd ..
-cd server
-mv .env.example .env
-cd ..
-```
+## Technologies Used
 
-Now install the dependencies
-```shell
-cd server
-yarn
-cd ..
-cd public
-yarn
-```
-We are almost done, Now just start the development server.
+- **Frontend:**
+  - React
+  - Styled Components
+  - React Icons
+  - Emoji Picker (replace with the actual library you use)
 
-For Frontend.
-```shell
-cd public
-yarn start
-```
-For Backend.
+- **Backend:**
+  - Node.js
+  - Express
+  - MongoDB (or your preferred database)
+  - Socket.io for real-time communication
 
-Open another terminal in folder, Also make sure mongodb is running in background.
-```shell
-cd server
-yarn start
-```
-Done! Now open localhost:3000 in your browser.
+## Prerequisites
 
-#### Second Method
-- This method requires docker and docker-compose to be installed in your system.
-- Make sure you are in the root of your project and run the following command.
+Before you begin, ensure you have met the following requirements:
 
-```shell
-docker compose build --no-cache
-```
-after the build is complete run the containers using the following command
-```shell
-docker compose up
-```
-now open localhost:3000 in your browser.
+- Node.js and npm installed.
+- MongoDB server running.
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/harshil-sanghvi/quasarchat.git
+   cd quasarchat
+
+2. Install dependencies:
+
+   ```bash
+   cd frontend
+   npm install
+    
+   cd ../backend
+   npm install
+   ```
+3. Configure environment variables:
+
+   ```Create a .env file in the backend folder and set the necessary variables (e.g., MONGODB_URI, PORT).```
+4. Start the development servers:
+
+    ```bash
+    cd frontend
+    npm start
+    
+    cd ../backend
+    npm start
+    ```
+
+5. Open your browser and go to http://localhost:PORT to use QuasarChat.
+
+## Screenshots
+
+### Login Page
+
+
+### Register Page
+
+
+
+### Avatar Selection Page
+
+
+
+### Chat Welcome Page
+
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to [Kishan Sheth](https://github.com/koolkishan/) for wonderful resources that helped me building this project.
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact me at harshil1708@gmail.com.
+
+Happy chatting!
