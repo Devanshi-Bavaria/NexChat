@@ -1,6 +1,6 @@
-# QuasarChat
+# NexChat
 
-QuasarChat is a real-time chat application that allows users to communicate with each other. It supports one-on-one messaging and provides a simple and intuitive user interface.
+NexChat is a real-time chat application that allows users to communicate with each other. It supports one-on-one messaging and provides a simple and intuitive user interface.
 
 ## Features
 
