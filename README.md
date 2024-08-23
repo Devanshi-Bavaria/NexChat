@@ -88,8 +88,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Thanks to [Kishan Sheth](https://github.com/koolkishan/) for wonderful resources that helped me building this project.
 
-## Contact
 
-If you have any questions or suggestions, feel free to contact me at harshil1708@gmail.com.
 
 Happy chatting!
