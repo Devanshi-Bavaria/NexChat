@@ -36,7 +36,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/harshil-sanghvi/quasarchat.git
+   https://github.com/Devanshi-Bavaria/NexChat.git
    cd quasarchat
 
 2. Install dependencies:
